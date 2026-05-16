@@ -54,9 +54,15 @@ export default function ToDoList() {
             <ul className="task-list">
                 {filteredTasks.map(task => (
                     <li key={task.id} className={task.done ? "task-item done" : "task-item"}>
-            <span onClick={() => toggleTask(task.id)} className="task-text">
-              {task.done ? "✅ " : "⏳ "} {task.text}
-            </span>
+                        <div onClick={() => toggleTask(task.id)} className="task-clickable-area">
+                            {/* Емодзі окремо (без закреслення) */}
+                            <span className="task-status-emoji">{task.done ? "✅ " : "⏳ "}</span>
+
+                            {/* Текст окремо (закреслюється, якщо виконано) */}
+                            <span style={{ textDecoration: task.done ? "line-through" : "none" }}>
+          {task.text}
+        </span>
+                        </div>
                         <button className="btn-delete" onClick={() => removeTask(task.id)}>×</button>
                     </li>
                 ))}

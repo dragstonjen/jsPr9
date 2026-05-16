@@ -13,14 +13,22 @@ body {
 
 .main-header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     border-bottom: 1px solid #29292e;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
 .main-header h1 {
     color: #04d361;
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
+    font-size: 2.5rem;
+}
+
+.main-header p {
+    margin: 0;
+    color: #a8a8b3;
+    font-size: 1.1rem;
+    line-height: 1.4;
 }
 
 .grid-container {
@@ -151,3 +159,32 @@ input {
 }
 .btn-delete:hover { background: rgba(255,71,87,0.1); }
 .empty-msg { text-align: center; color: #7c7c8a; margin-top: 15px; }
+
+
+.fruits-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.fruits-list li {
+    background: #29292e;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-clickable-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.task-status-emoji {
+    user-select: none;
+}
