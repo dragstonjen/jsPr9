@@ -1,0 +1,153 @@
+body {
+    background-color: #121214;
+    color: #e1e1e6;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.dashboard {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #29292e;
+    padding-bottom: 20px;
+}
+
+.main-header h1 {
+    color: #04d361;
+    margin: 0 0 10px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card-box, .counter-box, .todo-box {
+    background-color: #202024;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #8257e5;
+    margin-top: 0;
+    border-bottom: 1px solid #29292e;
+    padding-bottom: 10px;
+}
+
+.user-card {
+    background: #29292e;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.role-badge {
+    background: #ff79c6;
+    color: black;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.count-value {
+    color: #ff944d;
+    font-size: 1.8rem;
+}
+
+.button-group, .filter-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+button {
+    background: #41414c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover { background: #525262; }
+.btn-add { background: #04d361; color: black; }
+.btn-add:hover { background: #1bf07d; }
+.btn-reset { background: #ff4757; }
+.btn-reset:hover { background: #ff6b81; }
+
+.todo-input-block {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    background: #121214;
+    border: 1px solid #41414c;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.btn-todo-add { background: #8257e5; }
+.btn-todo-add:hover { background: #9466ff; }
+
+.filter-buttons button {
+    padding: 5px 12px;
+    font-size: 0.9rem;
+    background: #29292e;
+}
+
+.filter-buttons button.active-filter {
+    background: #8257e5;
+    color: white;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    background: #29292e;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+.task-text {
+    cursor: pointer;
+    flex: 1;
+}
+
+.task-item.done .task-text {
+    text-decoration: line-through;
+    color: #7c7c8a;
+}
+
+.btn-delete {
+    background: transparent;
+    color: #ff4757;
+    font-size: 1.2rem;
+    padding: 0 5px;
+}
+.btn-delete:hover { background: rgba(255,71,87,0.1); }
+.empty-msg { text-align: center; color: #7c7c8a; margin-top: 15px; }
